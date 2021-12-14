@@ -1,14 +1,16 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import SignUp from './SignUp';
-import Login from './Login';
 import Header from './Header';
-
+import Login from './pages/Login';
+import Footer from './Footer';
 
 export default function Container() {
 
-    return (
-        <div id="main-container">
-          <h1>PetMed</h1>
-        </div>
-    );
-}
+  return (
+    <>
+      <div id="main-container">
+        <Header />
+        <Login />
+        <Footer />
+      </div>
+    </>
+  );
+};

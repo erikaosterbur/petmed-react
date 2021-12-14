@@ -1,2 +1,21 @@
-
+:root {
+    --platinum: #edebeeff;
+    --deep-taupe: #866b62ff;
+    --pine-tree: #2e3318ff;
+    --silver-chalice: #adadafff;
+    --grullo: #b19c89ff;
+}
+body { 
+    background: url('./images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    background-color: var(--pine-tree);
+}
+footer {
+    background-color: var(--deep-taupe);
+}
 
