@@ -1,5 +1,5 @@
 import Header from './Header';
-import Login from './pages/Login';
+import Home from './pages/Home';
 import Footer from './Footer';
 
 export default function Container() {
@@ -8,7 +8,7 @@ export default function Container() {
     <>
       <div id="main-container">
         <Header />
-        <Login />
+        <Home />
         <Footer />
       </div>
     </>

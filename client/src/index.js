@@ -5,8 +5,8 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+const domain = "dev-u82jk458.us.auth0.com"
+const clientId = "MQcU04Hk8L6we5nCo2ftLPEiyvAJCuH6"
 
 ReactDOM.render(
     <Auth0Provider 
