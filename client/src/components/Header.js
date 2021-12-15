@@ -10,30 +10,34 @@ function Header() {
     return (
         isAuthenticated && (
             <header>
-                <Nav className="justify-content-center">
-                    <Nav.Item>
-                        <Nav.Link href="/home" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdPets style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                            PETS
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link href="/vet-visits" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdLocalHospital style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                            VET VISITS
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link href="/account" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><FaUser style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                            ACCOUNT
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link onClick={() => logout()} style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><FiLogOut style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                            LOGOUT
-                        </Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                <p style={{color: "var(--platinum)"}}>Hello, {user.name}!</p>
-                <img src={user.picture} alt={user.name} style={{borderRadius: "50%"}}/>
+                <div className="row">
+                    <div className="d-flex justify-content-flex-end">
+                        <p style={{color: "var(--platinum)"}} className="d-flex align-items-center">Hello, {user.name}!</p>
+                        <img src={user.picture} alt={user.name} style={{borderRadius: "50%", width: "3%"}}/>
+                    </div>
+                    <Nav className="justify-content-center">
+                        <Nav.Item>
+                            <Nav.Link href="/home" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdPets style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
+                                PETS
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/vet-visits" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdLocalHospital style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
+                                VET VISITS
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/account" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><FaUser style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
+                                ACCOUNT
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link onClick={() => logout()} style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><FiLogOut style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
+                                LOGOUT
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </div>
             </header>
         )
     )
