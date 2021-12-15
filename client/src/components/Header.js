@@ -6,7 +6,7 @@ import { NavDropdown, Nav } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 
 function Header() {
-    const { logout, isAuthenticated } = useAuth0();
+    const { user, logout, isAuthenticated } = useAuth0();
     return (
         isAuthenticated && (
             <header>
@@ -32,6 +32,8 @@ function Header() {
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
+                <p style={{color: "var(--platinum)"}}>Hello, {user.name}!</p>
+                <img src={user.picture} alt={user.name} style={{borderRadius: "50%"}}/>
             </header>
         )
     )
