@@ -4,7 +4,7 @@ import { Form, Button, FloatingLabel } from 'react-bootstrap';
 function CreatePet() {
     return (
         <>
-            <h1 className="d-flex justify-content-center m-5">Add a New Pet</h1>
+            <h1 className="d-flex justify-content-center m-5">Add a new pet</h1>
             <div className="d-flex justify-content-center m-5">
                 <Form style={{backgroundColor: "white"}}>
                     <Form.Group className="m-3" controlid="formBasicPetName">

@@ -23,12 +23,12 @@ function Header() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="/new-pet" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdPets style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                                ADD NEW PET
+                                NEW PET
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="/new-vet-visit" style={{ color: "var(--platinum)"}}><div className= "bi d-flex justify-content-center mx-auto mb-1"><MdLocalHospital style={{fontSize: "2.5rem", color: "var(--platinum)"}} /></div>
-                                ADD NEW VET VISIT
+                                NEW VET VISIT
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
