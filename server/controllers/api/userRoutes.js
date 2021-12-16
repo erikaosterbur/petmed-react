@@ -14,3 +14,6 @@ router.post("/new", ({ body }, res) => {
         }
     });
 });
+
+
+module.exports = router;
