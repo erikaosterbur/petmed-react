@@ -6,7 +6,7 @@ import { Nav } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 
 function Header() {
-    const { user, logout, isAuthenticated } = useAuth0();
+    const { logout, isAuthenticated } = useAuth0();
     return (
         isAuthenticated && (
             <header>
