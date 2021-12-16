@@ -14,6 +14,10 @@ const vetSchema = new Schema({
         type: Number,
         required: true,
     },
+    vaccines: {
+      type: String,
+      required: true,
+    },
     pet: [
       {
         type: Schema.Types.ObjectId,

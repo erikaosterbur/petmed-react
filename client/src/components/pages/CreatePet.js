@@ -6,7 +6,8 @@ function CreatePet() {
         <>
             <h1 className="d-flex justify-content-center m-5">Add a new pet</h1>
             <div className="d-flex justify-content-center m-5">
-                <Form style={{backgroundColor: "white"}}>
+                {/* TO DO: Create custom hook for media screen to adjust width of form in mobile */}
+                <Form style={{backgroundColor: "white", width: "40%"}}>
                     <Form.Group className="m-3" controlid="formBasicPetName">
                         <FloatingLabel controlid="floatingInput" label="Pet Name" className="mb-3">
                             <Form.Control type="petName"/>
