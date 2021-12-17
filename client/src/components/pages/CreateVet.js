@@ -14,11 +14,16 @@ function CreateVet() {
                             <Form.Control type="date" />
                         </FloatingLabel>
                     </Form.Group>
+                    {/* TO DO: Map over pets in database for form select options */}
                     <Form.Group className="m-3" controlid="formBasicPetName">
                         <FloatingLabel controlid="floatingInput" label="Select Pet" className="mb-3">
                             <Form.Select aria-label="Default select example">
                                 <option value="Ginny">Ginny</option>
-                                <option value="Buddy">Buddy</option>
+                                <option value="Ari">Ari</option>
+                                <option value="Tonks">Tonks</option>
+                                <option value="Ted">Ted</option>
+                                <option value="Ellie">Ellie</option>
+                                <option value="Oskar">Oskar</option>
                             </Form.Select>
                         </FloatingLabel>
                     </Form.Group>

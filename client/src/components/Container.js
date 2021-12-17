@@ -24,8 +24,9 @@ export default function Container() {
             <Route exact path="/new-vet-visit" element={<CreateVet />} />
             <Route exact path="/:id/edit-pet" element={<UpdatePet />} />
             <Route exact path="/:id/edit-vet-visit" element={<UpdateVet />} />
-            <Route exact path="/:id/pet-profile" element={<PetProfile />} />
-            <Route exact path="/:id/account" element={<Account />} />
+            {/* change to /:id/pet-profile when hooked up to database */}
+            <Route exact path="/pet-profile" element={<PetProfile />} />
+            <Route exact path="/account" element={<Account />} />
           </Routes>
         </Router>
         <Footer />
