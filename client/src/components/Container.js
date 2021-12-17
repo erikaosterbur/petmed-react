@@ -16,9 +16,9 @@ export default function Container() {
     <>
       <div id="main-container">
         <Header />
-        <Login />
         <Router>
           <Routes>
+            <Route exact path="/" element={<Login />} />
             <Route exact path="/home" element={<PetDashboard />} />
             <Route exact path="/new-pet" element={<CreatePet />} />
             <Route exact path="/new-vet-visit" element={<CreateVet />} />
